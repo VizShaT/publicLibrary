@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>List of all books - Public Libraray</title>
+  <script src="./src/ctrl/initialize.js"></script>
+  <script src="./src/model/Book.js"></script>
+  <script src="./src/view/listBooks.js"></script>
+  <script>
+    window.addEventListener("load",
+      pl.view.listBooks.setupUserInterface
+    );
+  </script>
+</head>
+
+<body>
+  <h1>Public Library: List of all books</h1>
+  <table id="books">
+    <thead>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Year</th>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <nav><a href='index.html'>Back to main menu</a></nav>
+</body>
+
+</html>
